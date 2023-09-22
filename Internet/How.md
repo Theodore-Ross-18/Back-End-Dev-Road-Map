@@ -151,6 +151,36 @@ google.com = Domain Name
 
 ## Introduction to HTTP and HTTPS
 
+> Two (2) most commonly used protocols in internet-based applications and services:
+
+> - HTTP (Hypertext Transfer Protocol)
+
+> HTTP is the protocol used to transfer data between a client (such as web browser) and a server (such as a website)
+
+> When you visit a website, your web browser sends an HTTP request to the server, asking for the webpage or other resource you've requested.
+
+> The server then sends an HTTP response back to the client, containing the requested data.
+
+> - HTTPS (HTTP Secure)
+
+> HTTPS is a more secure version of HTTP, which encrypts the data being transmitted between the client and server using SSL/TLS (Secure Sockets Layer/Transport Layer Security) encryption. 
+
+> This provides an additional layer of security, helping to protect sensitive information such as login credentials, payments information, and other personal data.
+
+> When you visit a website that uses HTTPS, your web browser will display a padlock icon in the address bar, indicating that the connection is secure.
+
+> You may also see the letters "https" at the beginning of the website address, rather than "http".
+
+> - https = More Secured
+
+## Building Applications with TCP/IP
+
+
+
+
+
+
+
 
 
 
