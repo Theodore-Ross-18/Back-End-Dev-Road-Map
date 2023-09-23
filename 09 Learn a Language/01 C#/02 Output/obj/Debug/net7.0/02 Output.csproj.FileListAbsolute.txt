@@ -1,0 +1,14 @@
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\bin\Debug\net7.0\02 Output.exe
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\bin\Debug\net7.0\02 Output.deps.json
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\bin\Debug\net7.0\02 Output.runtimeconfig.json
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\bin\Debug\net7.0\02 Output.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\bin\Debug\net7.0\02 Output.pdb
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\obj\Debug\net7.0\02 Output.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\obj\Debug\net7.0\02 Output.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\obj\Debug\net7.0\02 Output.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\obj\Debug\net7.0\02 Output.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\obj\Debug\net7.0\02 Output.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\obj\Debug\net7.0\refint\02 Output.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\obj\Debug\net7.0\02 Output.pdb
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\obj\Debug\net7.0\02 Output.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\02 Output\obj\Debug\net7.0\ref\02 Output.dll
