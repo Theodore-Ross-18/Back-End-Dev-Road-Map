@@ -1,0 +1,14 @@
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\bin\Debug\net7.0\05 Data Types.exe
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\bin\Debug\net7.0\05 Data Types.deps.json
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\bin\Debug\net7.0\05 Data Types.runtimeconfig.json
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\bin\Debug\net7.0\05 Data Types.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\bin\Debug\net7.0\05 Data Types.pdb
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\obj\Debug\net7.0\05 Data Types.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\obj\Debug\net7.0\05 Data Types.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\obj\Debug\net7.0\05 Data Types.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\obj\Debug\net7.0\05 Data Types.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\obj\Debug\net7.0\05 Data Types.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\obj\Debug\net7.0\refint\05 Data Types.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\obj\Debug\net7.0\05 Data Types.pdb
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\obj\Debug\net7.0\05 Data Types.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\05 Data Types\obj\Debug\net7.0\ref\05 Data Types.dll
