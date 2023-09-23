@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\Program\\Program.csproj",
-      "projectName": "Program",
-      "projectPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\Program\\Program.csproj",
+      "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\01 Syntax\\01 Syntax.csproj",
+      "projectName": "01 Syntax",
+      "projectPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\01 Syntax\\01 Syntax.csproj",
       "packagesPath": "C:\\Users\\berme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\Program\\obj\\",
+      "outputPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\01 Syntax\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\berme\\AppData\\Roaming\\NuGet\\NuGet.Config"
