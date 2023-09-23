@@ -1,0 +1,14 @@
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\bin\Debug\net7.0\06 Type Casting.exe
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\bin\Debug\net7.0\06 Type Casting.deps.json
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\bin\Debug\net7.0\06 Type Casting.runtimeconfig.json
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\bin\Debug\net7.0\06 Type Casting.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\bin\Debug\net7.0\06 Type Casting.pdb
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\obj\Debug\net7.0\06 Type Casting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\obj\Debug\net7.0\06 Type Casting.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\obj\Debug\net7.0\06 Type Casting.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\obj\Debug\net7.0\06 Type Casting.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\obj\Debug\net7.0\06 Type Casting.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\obj\Debug\net7.0\refint\06 Type Casting.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\obj\Debug\net7.0\06 Type Casting.pdb
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\obj\Debug\net7.0\06 Type Casting.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\06 Type Casting\obj\Debug\net7.0\ref\06 Type Casting.dll

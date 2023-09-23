@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "06 Type Casting/1.0.0": {
+        "runtime": {
+          "06 Type Casting.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "06 Type Casting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
