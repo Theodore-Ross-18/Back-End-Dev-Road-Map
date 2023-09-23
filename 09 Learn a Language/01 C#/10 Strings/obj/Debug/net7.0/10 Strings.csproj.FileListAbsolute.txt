@@ -1,0 +1,14 @@
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\obj\Debug\net7.0\10 Strings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\obj\Debug\net7.0\10 Strings.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\obj\Debug\net7.0\10 Strings.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\obj\Debug\net7.0\10 Strings.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\bin\Debug\net7.0\10 Strings.exe
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\bin\Debug\net7.0\10 Strings.deps.json
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\bin\Debug\net7.0\10 Strings.runtimeconfig.json
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\bin\Debug\net7.0\10 Strings.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\bin\Debug\net7.0\10 Strings.pdb
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\obj\Debug\net7.0\10 Strings.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\obj\Debug\net7.0\refint\10 Strings.dll
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\obj\Debug\net7.0\10 Strings.pdb
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\obj\Debug\net7.0\10 Strings.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\10 Strings\obj\Debug\net7.0\ref\10 Strings.dll
