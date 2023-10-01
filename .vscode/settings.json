@@ -3,9 +3,13 @@
         "Concat",
         "Datagram",
         "Deno",
+        "HMTP",
+        "humungous",
         "myclass",
         "myvar",
         "nytimes",
-        "phonebook"
+        "phonebook",
+        "SPDY",
+        "spritesheets"
     ]
 }
