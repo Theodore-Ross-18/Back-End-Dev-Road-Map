@@ -12,3 +12,17 @@ C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Langua
 C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\04 Variables.pdb
 C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\04 Variables.genruntimeconfig.cache
 C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\ref\04 Variables.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\bin\Debug\net7.0\04 Variables.exe
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\bin\Debug\net7.0\04 Variables.deps.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\bin\Debug\net7.0\04 Variables.runtimeconfig.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\bin\Debug\net7.0\04 Variables.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\bin\Debug\net7.0\04 Variables.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\04 Variables.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\04 Variables.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\04 Variables.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\04 Variables.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\04 Variables.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\refint\04 Variables.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\04 Variables.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\04 Variables.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\04 Variables\obj\Debug\net7.0\ref\04 Variables.dll

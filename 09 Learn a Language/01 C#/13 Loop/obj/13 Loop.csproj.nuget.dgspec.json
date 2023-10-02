@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\13 Loop.csproj": {}
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\13 Loop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\13 Loop.csproj": {
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\13 Loop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\13 Loop.csproj",
+        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\13 Loop.csproj",
         "projectName": "13 Loop",
-        "projectPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\13 Loop.csproj",
+        "projectPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\13 Loop.csproj",
         "packagesPath": "C:\\Users\\berme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\obj\\",
+        "outputPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\13 Loop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berme\\AppData\\Roaming\\NuGet\\NuGet.Config"

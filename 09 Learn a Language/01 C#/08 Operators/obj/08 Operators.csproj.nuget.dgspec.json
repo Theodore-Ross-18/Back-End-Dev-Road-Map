@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\08 Operators.csproj": {}
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\08 Operators.csproj": {}
   },
   "projects": {
-    "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\08 Operators.csproj": {
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\08 Operators.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\08 Operators.csproj",
+        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\08 Operators.csproj",
         "projectName": "08 Operators",
-        "projectPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\08 Operators.csproj",
+        "projectPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\08 Operators.csproj",
         "packagesPath": "C:\\Users\\berme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\obj\\",
+        "outputPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\08 Operators\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berme\\AppData\\Roaming\\NuGet\\NuGet.Config"

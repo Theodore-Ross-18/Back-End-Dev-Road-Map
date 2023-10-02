@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\05 Data Types.csproj": {}
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\05 Data Types.csproj": {}
   },
   "projects": {
-    "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\05 Data Types.csproj": {
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\05 Data Types.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\05 Data Types.csproj",
+        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\05 Data Types.csproj",
         "projectName": "05 Data Types",
-        "projectPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\05 Data Types.csproj",
+        "projectPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\05 Data Types.csproj",
         "packagesPath": "C:\\Users\\berme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\obj\\",
+        "outputPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\05 Data Types\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berme\\AppData\\Roaming\\NuGet\\NuGet.Config"

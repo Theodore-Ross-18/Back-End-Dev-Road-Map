@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\11 Booleans.csproj": {}
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\11 Booleans.csproj": {}
   },
   "projects": {
-    "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\11 Booleans.csproj": {
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\11 Booleans.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\11 Booleans.csproj",
+        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\11 Booleans.csproj",
         "projectName": "11 Booleans",
-        "projectPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\11 Booleans.csproj",
+        "projectPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\11 Booleans.csproj",
         "packagesPath": "C:\\Users\\berme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\berme\\OneDrive\\Documents\\GitHub\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\obj\\",
+        "outputPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\11 Booleans\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berme\\AppData\\Roaming\\NuGet\\NuGet.Config"

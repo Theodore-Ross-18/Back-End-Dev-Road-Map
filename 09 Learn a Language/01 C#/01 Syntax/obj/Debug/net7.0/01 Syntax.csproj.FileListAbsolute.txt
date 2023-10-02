@@ -12,3 +12,17 @@ C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Langua
 C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\01 Syntax.pdb
 C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\01 Syntax.genruntimeconfig.cache
 C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\ref\01 Syntax.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\bin\Debug\net7.0\01 Syntax.exe
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\bin\Debug\net7.0\01 Syntax.deps.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\bin\Debug\net7.0\01 Syntax.runtimeconfig.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\bin\Debug\net7.0\01 Syntax.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\bin\Debug\net7.0\01 Syntax.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\01 Syntax.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\01 Syntax.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\01 Syntax.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\01 Syntax.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\01 Syntax.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\refint\01 Syntax.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\01 Syntax.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\01 Syntax.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\01 Syntax\obj\Debug\net7.0\ref\01 Syntax.dll

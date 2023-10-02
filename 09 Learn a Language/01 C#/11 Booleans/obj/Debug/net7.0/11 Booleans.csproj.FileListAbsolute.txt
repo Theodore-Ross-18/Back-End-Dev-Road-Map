@@ -1,0 +1,14 @@
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\bin\Debug\net7.0\11 Booleans.exe
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\bin\Debug\net7.0\11 Booleans.deps.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\bin\Debug\net7.0\11 Booleans.runtimeconfig.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\bin\Debug\net7.0\11 Booleans.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\bin\Debug\net7.0\11 Booleans.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\obj\Debug\net7.0\11 Booleans.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\obj\Debug\net7.0\11 Booleans.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\obj\Debug\net7.0\11 Booleans.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\obj\Debug\net7.0\11 Booleans.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\obj\Debug\net7.0\11 Booleans.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\obj\Debug\net7.0\refint\11 Booleans.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\obj\Debug\net7.0\11 Booleans.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\obj\Debug\net7.0\11 Booleans.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\11 Booleans\obj\Debug\net7.0\ref\11 Booleans.dll

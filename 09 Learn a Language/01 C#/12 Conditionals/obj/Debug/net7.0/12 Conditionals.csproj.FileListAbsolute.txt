@@ -12,3 +12,17 @@ C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Langua
 C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\12 Conditionals.pdb
 C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\12 Conditionals.genruntimeconfig.cache
 C:\Users\berme\OneDrive\Documents\GitHub\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\ref\12 Conditionals.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\bin\Debug\net7.0\12 Conditionals.exe
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\bin\Debug\net7.0\12 Conditionals.deps.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\bin\Debug\net7.0\12 Conditionals.runtimeconfig.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\bin\Debug\net7.0\12 Conditionals.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\bin\Debug\net7.0\12 Conditionals.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\12 Conditionals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\12 Conditionals.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\12 Conditionals.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\12 Conditionals.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\12 Conditionals.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\refint\12 Conditionals.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\12 Conditionals.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\12 Conditionals.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\12 Conditionals\obj\Debug\net7.0\ref\12 Conditionals.dll
