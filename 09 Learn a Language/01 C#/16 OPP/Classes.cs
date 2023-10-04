@@ -4,8 +4,9 @@
 class Car 
 {
   // Class Members
-  public string classname;
-  public string objectname;
+  // public string classname;
+  // public string objectname;
+  public string owner;
   public string model = "Mustang"; // Field
   public string color = "Black"; // Field
   public int year = 1969; // Field
@@ -14,4 +15,9 @@ class Car
   {
     Console.WriteLine("The car is going as fast as it can!\n");
   }
+  // Constructor
+  public Car() {
+    owner = "Theodore Ross";
+  }
+
 }
