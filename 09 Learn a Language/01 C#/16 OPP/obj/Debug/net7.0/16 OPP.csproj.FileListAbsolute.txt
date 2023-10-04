@@ -1,0 +1,14 @@
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\bin\Debug\net7.0\16 OPP.exe
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\bin\Debug\net7.0\16 OPP.deps.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\bin\Debug\net7.0\16 OPP.runtimeconfig.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\bin\Debug\net7.0\16 OPP.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\bin\Debug\net7.0\16 OPP.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\obj\Debug\net7.0\16 OPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\obj\Debug\net7.0\16 OPP.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\obj\Debug\net7.0\16 OPP.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\obj\Debug\net7.0\16 OPP.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\obj\Debug\net7.0\16 OPP.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\obj\Debug\net7.0\refint\16 OPP.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\obj\Debug\net7.0\16 OPP.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\obj\Debug\net7.0\16 OPP.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\obj\Debug\net7.0\ref\16 OPP.dll
