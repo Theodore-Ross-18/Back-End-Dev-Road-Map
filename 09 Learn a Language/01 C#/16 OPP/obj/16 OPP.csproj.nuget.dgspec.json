@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 Classes\\16 Classes.csproj": {}
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 OPP\\16 OPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 Classes\\16 Classes.csproj": {
+    "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 OPP\\16 OPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 Classes\\16 Classes.csproj",
-        "projectName": "16 Classes",
-        "projectPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 Classes\\16 Classes.csproj",
+        "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 OPP\\16 OPP.csproj",
+        "projectName": "16 OPP",
+        "projectPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 OPP\\16 OPP.csproj",
         "packagesPath": "C:\\Users\\berme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 Classes\\obj\\",
+        "outputPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\09 Learn a Language\\01 C#\\16 OPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berme\\AppData\\Roaming\\NuGet\\NuGet.Config"

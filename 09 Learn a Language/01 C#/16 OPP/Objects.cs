@@ -1,4 +1,3 @@
-
 class Objects
 {
     static void Main(string[] args)
