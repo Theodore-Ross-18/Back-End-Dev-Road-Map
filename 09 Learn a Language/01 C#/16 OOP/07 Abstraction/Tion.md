@@ -74,5 +74,3 @@ class Program
 
 > To achieve security - hide certain details and only show the important details of an object.
 
-## C# Interface
-
