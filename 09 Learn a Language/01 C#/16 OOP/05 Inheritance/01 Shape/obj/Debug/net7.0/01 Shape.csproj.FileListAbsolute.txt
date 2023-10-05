@@ -1,0 +1,14 @@
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\bin\Debug\net7.0\01 Shape.exe
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\bin\Debug\net7.0\01 Shape.deps.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\bin\Debug\net7.0\01 Shape.runtimeconfig.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\bin\Debug\net7.0\01 Shape.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\bin\Debug\net7.0\01 Shape.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\obj\Debug\net7.0\01 Shape.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\obj\Debug\net7.0\01 Shape.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\obj\Debug\net7.0\01 Shape.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\obj\Debug\net7.0\01 Shape.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\obj\Debug\net7.0\01 Shape.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\obj\Debug\net7.0\refint\01 Shape.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\obj\Debug\net7.0\01 Shape.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\obj\Debug\net7.0\01 Shape.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\05 Inheritance\01 Shape\obj\Debug\net7.0\ref\01 Shape.dll
