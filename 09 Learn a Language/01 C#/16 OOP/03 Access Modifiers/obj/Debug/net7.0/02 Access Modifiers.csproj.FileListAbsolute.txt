@@ -12,3 +12,17 @@ C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Lan
 C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\02 Access Modifiers\obj\Debug\net7.0\02 Access Modifiers.pdb
 C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\02 Access Modifiers\obj\Debug\net7.0\02 Access Modifiers.genruntimeconfig.cache
 C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OPP\02 Access Modifiers\obj\Debug\net7.0\ref\02 Access Modifiers.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\bin\Debug\net7.0\02 Access Modifiers.exe
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\bin\Debug\net7.0\02 Access Modifiers.deps.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\bin\Debug\net7.0\02 Access Modifiers.runtimeconfig.json
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\bin\Debug\net7.0\02 Access Modifiers.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\bin\Debug\net7.0\02 Access Modifiers.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\obj\Debug\net7.0\02 Access Modifiers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\obj\Debug\net7.0\02 Access Modifiers.AssemblyInfoInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\obj\Debug\net7.0\02 Access Modifiers.AssemblyInfo.cs
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\obj\Debug\net7.0\02 Access Modifiers.csproj.CoreCompileInputs.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\obj\Debug\net7.0\02 Access Modifiers.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\obj\Debug\net7.0\refint\02 Access Modifiers.dll
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\obj\Debug\net7.0\02 Access Modifiers.pdb
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\obj\Debug\net7.0\02 Access Modifiers.genruntimeconfig.cache
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\09 Learn a Language\01 C#\16 OOP\03 Access Modifiers\obj\Debug\net7.0\ref\02 Access Modifiers.dll
