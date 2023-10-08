@@ -46,7 +46,7 @@
         } else {
             if (value === '=') {
                 try {
-                    var evaluator = new Expression(inputField.value);
+                    var evaluator = new NCalc.Expression(inputField.value);
                     var result = evaluator.evaluate();
                     inputField.value = result;
                     resultField.textContent = 'Result: ' + result;

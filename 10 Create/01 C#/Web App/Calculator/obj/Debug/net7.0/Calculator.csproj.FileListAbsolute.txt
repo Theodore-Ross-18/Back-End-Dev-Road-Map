@@ -31,3 +31,4 @@ C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\10 Create\01 C
 C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\10 Create\01 C#\Web App\Calculator\bin\Debug\net7.0\NCalc.dll
 C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\10 Create\01 C#\Web App\Calculator\obj\Debug\net7.0\Calculator.csproj.AssemblyReference.cache
 C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\10 Create\01 C#\Web App\Calculator\obj\Debug\net7.0\Calculator.csproj.CopyComplete
+C:\Users\berme\OneDrive\Desktop\G I T H U B\Back-End-Dev-Road-Map\10 Create\01 C#\Web App\Calculator\bin\Debug\net7.0\Antlr4.Runtime.Standard.dll

@@ -8,17 +8,28 @@
     ".NETCoreApp,Version=v7.0": {
       "Calculator/1.0.0": {
         "dependencies": {
-          "ncalc": "1.3.8"
+          "NCalcSync": "3.8.0"
         },
         "runtime": {
           "Calculator.dll": {}
         }
       },
-      "ncalc/1.3.8": {
+      "Antlr4.Runtime.Standard/4.12.0": {
         "runtime": {
-          "lib/NCalc.dll": {
-            "assemblyVersion": "1.3.8.0",
-            "fileVersion": "1.3.8.0"
+          "lib/netstandard2.0/Antlr4.Runtime.Standard.dll": {
+            "assemblyVersion": "4.12.0.0",
+            "fileVersion": "4.12.0.0"
+          }
+        }
+      },
+      "NCalcSync/3.8.0": {
+        "dependencies": {
+          "Antlr4.Runtime.Standard": "4.12.0"
+        },
+        "runtime": {
+          "lib/net5.0/NCalc.dll": {
+            "assemblyVersion": "3.8.0.0",
+            "fileVersion": "3.8.0.7"
           }
         }
       }
@@ -30,12 +41,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ncalc/1.3.8": {
+    "Antlr4.Runtime.Standard/4.12.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-T3kt6mWc70x3Ex5PxOmuILy563CGAdoAnyknXX7Du2/SXs2T94hNwc5CVwZcwCu5/A2ZBZhnHnc5dpcqCRGQ0A==",
-      "path": "ncalc/1.3.8",
-      "hashPath": "ncalc.1.3.8.nupkg.sha512"
+      "sha512": "sha512-Tz5W0b/wXdX2Q09UyzMn2wJWy9BoCK6HvX7o6jZ+NILs0vGyJU5u/hfPO6tUWgYBT6GOrzdRAz+elomdu4nDtw==",
+      "path": "antlr4.runtime.standard/4.12.0",
+      "hashPath": "antlr4.runtime.standard.4.12.0.nupkg.sha512"
+    },
+    "NCalcSync/3.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Jd1QPNsYJvMS7QBVsvyK+WxMb2WJ2zNJ4mF0NV9n77mH+20t7n4YBpUAmUYzdvXFlAt+soa0f/y/555aZWsAPA==",
+      "path": "ncalcsync/3.8.0",
+      "hashPath": "ncalcsync.3.8.0.nupkg.sha512"
     }
   }
 }

@@ -38,9 +38,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "NCalc": {
+            "NCalcSync": {
               "target": "Package",
-              "version": "[1.3.8, )"
+              "version": "[3.8.0, )"
             }
           },
           "imports": [
