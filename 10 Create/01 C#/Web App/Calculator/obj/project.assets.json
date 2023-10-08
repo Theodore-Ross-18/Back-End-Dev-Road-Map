@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "ncalc/1.3.8": {
+        "type": "package",
+        "compile": {
+          "lib/NCalc.dll": {}
+        },
+        "runtime": {
+          "lib/NCalc.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ncalc/1.3.8": {
+      "sha512": "T3kt6mWc70x3Ex5PxOmuILy563CGAdoAnyknXX7Du2/SXs2T94hNwc5CVwZcwCu5/A2ZBZhnHnc5dpcqCRGQ0A==",
+      "type": "package",
+      "path": "ncalc/1.3.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/NCalc.dll",
+        "ncalc.1.3.8.nupkg.sha512",
+        "ncalc.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "NCalc >= 1.3.8"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\berme\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\10 Create\\01 C#\\Web App\\Calculator\\Calculator.csproj",
+      "projectName": "Calculator",
+      "projectPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\10 Create\\01 C#\\Web App\\Calculator\\Calculator.csproj",
+      "packagesPath": "C:\\Users\\berme\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\berme\\OneDrive\\Desktop\\G I T H U B\\Back-End-Dev-Road-Map\\10 Create\\01 C#\\Web App\\Calculator\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\berme\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "NCalc": {
+            "target": "Package",
+            "version": "[1.3.8, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ncalc 1.3.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ncalc",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}

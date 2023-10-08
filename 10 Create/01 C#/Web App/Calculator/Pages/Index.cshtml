@@ -1,0 +1,64 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<link rel="stylesheet" href="~/site.css" />
+
+<div class="calculator">
+    <h1>@ViewData["Title"]</h1>
+
+    <form method="post">
+        <input type="text" asp-for="Expression" />
+
+        <div class="button-container">
+            <button type="button" onclick="appendToExpression('7')">7</button>
+            <button type="button" onclick="appendToExpression('8')">8</button>
+            <button type="button" onclick="appendToExpression('9')">9</button>
+            <button type="button" onclick="appendToExpression('+')">+</button>
+            <button type="button" onclick="appendToExpression('4')">4</button>
+            <button type="button" onclick="appendToExpression('5')">5</button>
+            <button type="button" onclick="appendToExpression('6')">6</button>
+            <button type="button" onclick="appendToExpression('-')">-</button>
+            <button type="button" onclick="appendToExpression('1')">1</button>
+            <button type="button" onclick="appendToExpression('2')">2</button>
+            <button type="button" onclick="appendToExpression('3')">3</button>
+            <button type="button" onclick="appendToExpression('*')">*</button>
+            <button type="button" onclick="appendToExpression('0')">0</button>
+            <button type="button" onclick="appendToExpression('.')">.</button>
+            <button type="button" onclick="document.forms[0].reset()">C</button>
+            <button type="button" onclick="appendToExpression('/')">/</button>
+            <button type="submit">=</button>
+        </div>
+    </form>
+    <br>
+    <p>Result: @Model.Result</p>
+      
+    <script>
+    function appendToExpression(value) {
+        var inputField = document.querySelector('input[name="Expression"]');
+        var resultField = document.querySelector('p');
+        
+        if (value === 'C') {
+            inputField.value = ''; // Clear the input field
+            resultField.textContent = 'Result:';
+        } else {
+            if (value === '=') {
+                try {
+                    var evaluator = new Expression(inputField.value);
+                    var result = evaluator.evaluate();
+                    inputField.value = result;
+                    resultField.textContent = 'Result: ' + result;
+                } catch (error) {
+                    resultField.textContent = 'Error: ' + error.message;
+                }
+            } else {
+                inputField.value += value;
+            }
+        }
+    }
+</script>
+
+</div>
+
