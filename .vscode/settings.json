@@ -13,6 +13,7 @@
         "Deno",
         "fname",
         "HMTP",
+        "HPACK",
         "Hsts",
         "humungous",
         "Linq",

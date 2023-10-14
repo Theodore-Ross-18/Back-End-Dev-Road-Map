@@ -245,6 +245,8 @@ google.com = Domain Name
 
 - #### Protocols play a critical role in enabling communication and data exchange over the internet, allowing devices and systems from different manufacturers and vendors to communicate seamlessly.
 
+> Note: No copyright intended just basically a student reviewer
+
 
 
 

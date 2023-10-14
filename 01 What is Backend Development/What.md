@@ -5,3 +5,5 @@
 ### What does a Backend Developer do?
 
 > A backend developer is responsible for the development of server-side components of a web application i.e. working with databases, handling requests, creating server-side APIs that can be consumed by frontend developers to retrieve and manipulate data, ensuring the scalability of the systems i.e. making sure that the backend can handle a high volume of traffic and is performant, integrating external services like payment gateways, message queues, cloud services, etc.
+
+> Note: No copyright intended just basically a student reviewer
