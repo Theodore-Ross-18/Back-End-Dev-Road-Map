@@ -2,7 +2,7 @@
 
 > C# (pronounced “C sharp”) is a general purpose programming language made by Microsoft. It is used to perform different tasks and can be used to create web apps, games, mobile apps, etc.
 
-> C# (C-Sharp) is a programming language developed by Microsoft that runs o the .NET Framework.
+> C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.
 
 > C# is used to develop web apps, desktop apps, mobile apps, games and much more
 
