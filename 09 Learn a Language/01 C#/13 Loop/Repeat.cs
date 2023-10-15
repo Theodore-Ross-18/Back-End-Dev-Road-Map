@@ -27,7 +27,7 @@ for (int i = 0; i < 10; i++)
 // Nested Loops
 
 // Outer loop
-for (int o = 1; o <= 2; ++o) 
+for (int o = 1; o <= 2; o++) 
 {
   Console.WriteLine("Outer: " + o);  // Executes 2 times
 
