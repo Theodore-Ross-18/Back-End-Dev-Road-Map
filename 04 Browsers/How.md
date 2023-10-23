@@ -347,21 +347,362 @@ Let's see the tree construction process for the example input:
 </html>
 ```
 
+> The input to the tree construction stage is a sequence of tokens from the tokenization stage. The first mode is the "`initial mode`". Receiving the "html" token will cause a move to the "`before html`" mode and a reprocessing of the token in that mode. This will cause creation of the HTMLHtmlElement element, which will be appended to the root Document object.
 
+> The state will be changed to "`before head`". The "body" token is then received. An HTMLHeadElement will be created implicitly although we don't have a "head" token and it will be added to the tree.
 
+> We now move to the "`in head`" mode and then to "`after head`". The body token is reprocessed, an HTMLBodyElement is created and inserted and the mode is transferred to "`in body`".
 
+> The character tokens of the "Hello world" string are now received. The first one will cause creation and insertion of a "Text" node and the other characters will be appended to that node.
 
+> The receiving of the body end token will cause a transfer to "`after body`" mode. We will now receive the html end tag which will move us to "`after after body`" mode. Receiving the end of file token will end the parsing.
 
+[Tree Construction](https://web.dev/static/articles/howbrowserswork/image/tree-construction-exampl-4e9757a851f96.gif)
 
+## Actions when the parsing is finished
 
+> At this stage the browser will mark the document as interactive and start parsing scripts that are in "deferred" mode: those that should be executed after the document is parsed. The document state will be then set to "complete" and a "load" event will be fired.
 
+> You can see the full algorithms for tokenization and tree construction in the HTML5 specification:
 
+> - https://html.spec.whatwg.org/multipage/parsing.html#html-parser
 
+---
 
+## Browsers' error tolerance
 
+> You never get an "Invalid Syntax" error on an HTML page. Browsers fix any invalid content and go on.
 
+Take this HTML for example:
+```
+<html>
+  <mytag>
+  </mytag>
+  <div>
+  <p>
+  </div>
+    Really lousy HTML
+  </p>
+</html>
+```
 
+> I must have violated about a million rules ("mytag" is not a standard tag, wrong nesting of the "p" and "div" elements and more) but the browser still shows it correctly and doesn't complain. So a lot of the parser code is fixing the HTML author mistakes.
 
+> Error handling is quite consistent in browsers, but amazingly enough it hasn't been part of HTML specifications. Like bookmarking and back/forward buttons it's just something that developed in browsers over the years. There are known invalid HTML constructs repeated on many sites, and the browsers try to fix them in a way conformant with other browsers.
+
+> The HTML5 specification does define some of these requirements. (WebKit summarizes this nicely in the comment at the beginning of the HTML parser class.)
+
+> The parser parses tokenized input into the document, building up the document tree. If the document is well-formed, parsing it is straightforward.
+
+> Unfortunately, we have to handle many HTML documents that are not well-formed, so the parser has to be tolerant about errors.
+
+We have to take care of at least the following error conditions:
+
+> 1. The element being added is explicitly forbidden inside some outer tag. In this case we should close all tags up to the one which forbids the element, and add it afterwards.
+
+> 2. We are not allowed to add the element directly. It could be that the person writing the document forgot some tag in between (or that the tag in between is optional). This could be the case with the following tags: HTML HEAD BODY TBODY TR TD LI (did I forget any?).
+
+> 3. We want to add a block element inside an inline element. Close all inline elements up to the next higher block element.
+
+> 4. If this doesn't help, close elements until we are allowed to add the element - or ignore the tag.
+
+Let's see some WebKit error tolerance examples:
+
+### `</br>` instead of `<br>`
+
+> Some sites use `</br>` instead of `<br>`. In order to be compatible with IE and Firefox, WebKit treats this like `<br>`.
+
+The code:
+```
+if (t->isCloseTag(brTag) && m_document->inCompatMode()) {
+     reportError(MalformedBRError);
+     t->beginTag = true;
+}
+```
+
+Note that the error handling is internal: it won't be presented to the user.
+
+### A stray table
+
+> A stray table is a table inside another table, but not inside a table cell.
+
+For example: 
+```
+<table>
+  <table>
+    <tr><td>inner table</td></tr>
+  </table>
+  <tr><td>outer table</td></tr>
+</table>
+```
+WebKit will change the hierarchy to two sibling tables:
+```
+<table>
+  <tr><td>outer table</td></tr>
+</table>
+<table>
+  <tr><td>inner table</td></tr>
+</table>
+```
+The code:
+```
+if (m_inStrayTableContent && localName == tableTag)
+        popBlock(tableTag);
+```
+> WebKit uses a stack for the current element contents: it will pop the inner table out of the outer table stack. The tables will now be siblings.
+
+### Nested form elements
+
+> In case the user puts a form inside another form, the second form is ignored.
+
+The code:
+```
+if (!m_currentFormElement) {
+        m_currentFormElement = new HTMLFormElement(formTag,    m_document);
+}
+```
+
+### A too deep tag hierarchy
+
+The comment speaks for itself.
+```
+bool HTMLParser::allowNestedRedundantTag(const AtomicString& tagName)
+{
+
+unsigned i = 0;
+for (HTMLStackElem* curr = m_blockStack;
+         i < cMaxRedundantTagDepth && curr && curr->tagName == tagName;
+     curr = curr->next, i++) { }
+return i != cMaxRedundantTagDepth;
+}
+```
+### Misplaced html or body end tags
+
+Again - the comment speaks for itself.
+```
+if (t->tagName == htmlTag || t->tagName == bodyTag )
+        return;
+```
+> So web authors beware - unless you want to appear as an example in a WebKit error tolerance code snippet - write well formed HTML.
+
+## CSS parsing
+
+> Remember the parsing concepts in the introduction? Well, unlike HTML, CSS is a context free grammar and can be parsed using the types of parsers described in the introduction. In fact the CSS specification defines CSS lexical and syntax grammar.
+
+> - https://www.w3.org/TR/CSS2/grammar.html
+
+Let's see some examples:
+
+The lexical grammar (vocabulary) is defined by regular expressions for each token:
+```
+comment   \/\*[^*]*\*+([^/*][^*]*\*+)*\/
+num       [0-9]+|[0-9]*"."[0-9]+
+nonascii  [\200-\377]
+nmstart   [_a-z]|{nonascii}|{escape}
+nmchar    [_a-z0-9-]|{nonascii}|{escape}
+name      {nmchar}+
+ident     {nmstart}{nmchar}*
+```
+"ident" is short for identifier, like a class name. "name" is an element id (that is referred by "#" )
+
+The syntax grammar is described in BNF.
+```
+ruleset
+  : selector [ ',' S* selector ]*
+    '{' S* declaration [ ';' S* declaration ]* '}' S*
+  ;
+selector
+  : simple_selector [ combinator selector | S+ [ combinator? selector ]? ]?
+  ;
+simple_selector
+  : element_name [ HASH | class | attrib | pseudo ]*
+  | [ HASH | class | attrib | pseudo ]+
+  ;
+class
+  : '.' IDENT
+  ;
+element_name
+  : IDENT | '*'
+  ;
+attrib
+  : '[' S* IDENT S* [ [ '=' | INCLUDES | DASHMATCH ] S*
+    [ IDENT | STRING ] S* ] ']'
+  ;
+pseudo
+  : ':' [ IDENT | FUNCTION S* [IDENT S*] ')' ]
+  ;
+```
+Explanation:
+
+A ruleset is this structure:
+```
+div.error, a.error {
+  color:red;
+  font-weight:bold;
+}
+```
+> `div.error` and `a.error` are selectors. The part inside the curly braces contains the rules that are applied by this ruleset. This structure is defined formally in this definition:
+```
+ruleset
+  : selector [ ',' S* selector ]*
+    '{' S* declaration [ ';' S* declaration ]* '}' S*
+  ;
+```
+> This means a ruleset is a selector or optionally a number of selectors separated by a comma and spaces (S stands for white space). A ruleset contains curly braces and inside them a declaration or optionally a number of declarations separated by a semicolon. "declaration" and "selector" will be defined in the following BNF definitions.
+
+## WebKit CSS parser
+
+> WebKit uses Flex and Bison parser generators to create parsers automatically from the CSS grammar files. As you recall from the parser introduction, Bison creates a bottom up shift-reduce parser. Firefox uses a top down parser written manually. In both cases each CSS file is parsed into a StyleSheet object. Each object contains CSS rules. The CSS rule objects contain selector and declaration objects and other objects corresponding to CSS grammar.
+
+[Parsing CSS](https://web.dev/static/articles/howbrowserswork/image/parsing-css-4531ebee58764_856.png)
+
+## The order of processing scripts and style sheets
+
+#### *Scripts*
+
+> The model of the web is synchronous. Authors expect scripts to be parsed and executed immediately when the parser reaches a `<script>` tag. he parsing of the document halts until the script has been executed. If the script is external then the resource must first be fetched from the network - this is also done synchronously, and parsing halts until the resource is fetched. This was the model for many years and is also specified in HTML4 and 5 specifications. Authors can add the "defer" attribute to a script, in which case it will not halt document parsing and will execute after the document is parsed. HTML5 adds an option to mark the script as asynchronous so it will be parsed and executed by a different thread. 
+
+#### *Speculative parsing*
+
+> Both WebKit and Firefox do this optimization. While executing scripts, another thread parses the rest of the document and finds out what other resources need to be loaded from the network and loads them. In this way, resources can be loaded on parallel connections and overall speed is improved. Note: the speculative parser only parses references to external resources like external scripts, style sheets and images: it doesn't modify the DOM tree - that is left to the main parser.
+
+#### *Style sheets*
+
+> Style sheets on the other hand have a different model. Conceptually it seems that since style sheets don't change the DOM tree, there is no reason to wait for them and stop the document parsing. There is an issue, though, of scripts asking for style information during the document parsing stage. If the style is not loaded and parsed yet, the script will get wrong answers and apparently this caused lots of problems. It seems to be an edge case but is quite common. Firefox blocks all scripts when there is a style sheet that is still being loaded and parsed. WebKit blocks scripts only when they try to access certain style properties that may be affected by unloaded style sheets.
+
+#### *Render tree construction*
+
+> While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document. The purpose of this tree is to enable painting the contents in their correct order.
+
+> Firefox calls the elements in the render tree "frames". WebKit uses the term renderer or render object.
+
+> A renderer knows how to lay out and paint itself and its children.
+
+WebKit's RenderObject class, the base class of the renderers, has the following definition:
+```
+class RenderObject{
+  virtual void layout();
+  virtual void paint(PaintInfo);
+  virtual void rect repaintRect();
+  Node* node;  //the DOM node
+  RenderStyle* style;  // the computed style
+  RenderLayer* containgLayer; //the containing z-index layer
+}
+```
+> Each renderer represents a rectangular area usually corresponding to a node's CSS box, as described by the CSS2 spec. It includes geometric information like width, height and position.
+
+> The box type is affected by the "display" value of the style attribute that is relevant to the node (see the style computation section). Here is WebKit code for deciding what type of renderer should be created for a DOM node, according to the display attribute:
+```
+RenderObject* RenderObject::createObject(Node* node, RenderStyle* style)
+{
+    Document* doc = node->document();
+    RenderArena* arena = doc->renderArena();
+    ...
+    RenderObject* o = 0;
+
+    switch (style->display()) {
+        case NONE:
+            break;
+        case INLINE:
+            o = new (arena) RenderInline(node);
+            break;
+        case BLOCK:
+            o = new (arena) RenderBlock(node);
+            break;
+        case INLINE_BLOCK:
+            o = new (arena) RenderBlock(node);
+            break;
+        case LIST_ITEM:
+            o = new (arena) RenderListItem(node);
+            break;
+       ...
+    }
+
+    return o;
+}
+```
+The element type is also considered: for example, form controls and tables have special frames.
+
+> In WebKit if an element wants to create a special renderer, it will override the `createRenderer()` method. The renderers point to style objects that contains non geometric information.
+
+### The render tree relation to the DOM tree 
+
+> The renderers correspond to DOM elements, but the relation is not one to one. Non-visual DOM elements will not be inserted in the render tree. An example is the "head" element. Also elements whose display value was assigned to "none" will not appear in the tree (whereas elements with "hidden" visibility will appear in the tree).
+
+> There are DOM elements which correspond to several visual objects. These are usually elements with complex structure that cannot be described by a single rectangle. For example, the "select" element has three renderers: one for the display area, one for the drop down list box and one for the button. Also when text is broken into multiple lines because the width is not sufficient for one line, the new lines will be added as extra renderers.
+
+> Another example of multiple renderers is broken HTML. According to the CSS spec an inline element must contain either only block elements or only inline elements. In the case of mixed content, anonymous block renderers will be created to wrap the inline elements.
+
+> Some render objects correspond to a DOM node but not in the same place in the tree. Floats and absolutely positioned elements are out of flow, placed in a different part of the tree, and mapped to the real frame. A placeholder frame is where they should have been.
+
+[The render tree and the corresponding DOM tree. The "Viewport" is the initial containing block. In WebKit it will be the "RenderView" object](https://web.dev/static/articles/howbrowserswork/image/the-render-tree-the-corr-f699894ef4c75_856.png)
+
+### The flow of constructing the tree
+
+> In Firefox, the presentation is registered as a listener for DOM updates. The presentation delegates frame creation to the `FrameConstructor` and the constructor resolves style and creates a frame.
+
+> In WebKit the process of resolving the style and creating a renderer is called "attachment". Every DOM node has an "attach" method. Attachment is synchronous, node insertion to the DOM tree calls the new node "attach" method.
+
+> Processing the html and body tags results in the construction of the render tree root. The root render object corresponds to what the CSS spec calls the containing block: the top most block that contains all other blocks. Its dimensions are the viewport: the browser window display area dimensions. Firefox calls it `ViewPortFrame` and WebKit calls it `RenderView`. This is the render object that the document points to. The rest of the tree is constructed as a DOM nodes insertion.
+
+See: https://www.w3.org/TR/CSS21/intro.html#processing-model
+
+### Style Computation
+
+> Building the render tree requires calculating the visual properties of each render object. This is done by calculating the style properties of each element.
+
+> The style includes style sheets of various origins, inline style elements and visual properties in the HTML (like the "bgcolor" property).The later is translated to matching CSS style properties.
+
+> The origins of style sheets are the browser's default style sheets, the style sheets provided by the page author and user style sheets - these are style sheets provided by the browser user (browsers let you define your favorite styles. In Firefox, for instance, this is done by placing a style sheet in the "Firefox Profile" folder).
+
+Style computation brings up a few difficulties:
+
+1. Style data is a very large construct, holding the numerous style properties, this can cause memory problems.
+
+2. Finding the matching rules for each element can cause performance issues if it's not optimized. Traversing the entire rule list for each element to find matches is a heavy task. Selectors can have complex structure that can cause the matching process to start on a seemingly promising path that is proven to be futile and another path has to be tried.
+
+For example - this compound selector:
+```
+div div div div{
+...
+}
+```
+
+> Means the rules apply to a `<div>` who is the descendant of 3 divs. Suppose you want to check if the rule applies for a given `<div>` element. You choose a certain path up the tree for checking. You may need to traverse the node tree up just to find out there are only two divs and the rule does not apply. You then need to try other paths in the tree.
+
+3. Applying the rules involves quite complex cascade rules that define the hierarchy of the rules.
+
+Let's see how the browsers face these issues:
+
+### Sharing style data
+
+    WebKit nodes references style objects (RenderStyle). These objects can be shared by nodes in some conditions. The nodes are siblings or cousins and:
+
+    1. The elements must be in the same mouse state (e.g., one can't be in :hover while the other isn't)
+
+    2. Neither element should have an id
+
+    3. The tag names should match
+
+    4. The class attributes should match
+
+    5. The set of mapped attributes must be identical
+
+    6. The link states must match
+
+    7. The focus states must match
+
+    8. Neither element should be affected by attribute selectors, where affected is defined as having any selector match that uses an attribute selector in any position within the selector at all
+
+    9. There must be no inline style attribute on the elements
+
+    10. There must be no sibling selectors in use at all. WebCore simply throws a global switch when any sibling selector is encountered and disables style sharing for the entire document when they are present. This includes the + selector and selectors like :first-child and :last-child.
+
+### Firefox rule tree
+
+> Firefox has two extra trees for easier style computation: the rule tree and style context tree. WebKit also has style objects but they are not stored in a tree like the style context tree, only the DOM node points to its relevant style.
+
+[Firefox Style Context Tree](https://web.dev/static/articles/howbrowserswork/image/firefox-style-context-tre-f578b75b74df7_856.png)
 
 
 
