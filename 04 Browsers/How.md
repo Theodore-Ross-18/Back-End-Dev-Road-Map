@@ -704,5 +704,203 @@ WebKit nodes references style objects (RenderStyle). These objects can be shared
 
 [Firefox Style Context Tree](https://web.dev/static/articles/howbrowserswork/image/firefox-style-context-tre-f578b75b74df7_856.png)
 
+> The style contexts contain end values. The values are computed by applying all the matching rules in the correct order and performing manipulations that transform them from logical to concrete values. For example, if the logical value is a percentage of the screen it will be calculated and transformed to absolute units. The rule tree idea is really clever. It enables sharing these values between nodes to avoid computing them again. This also saves space.
 
+> All the matched rules are stored in a tree. The bottom nodes in a path have higher priority. The tree contains all the paths for rule matches that were found. Storing the rules is done lazily. The tree isn't calculated at the beginning for every node, but whenever a node style needs to be computed the computed paths are added to the tree.
 
+The idea is to see the tree paths as words in a lexicon. Lets say we already computed this rule tree:
+
+[Computed Rule Tree](https://web.dev/static/articles/howbrowserswork/image/computed-rule-tree-f874f412bbaf_856.png)
+
+> Suppose we need to match rules for another element in the content tree, and find out the matched rules (in the correct order) are B-E-I. We already have this path in the tree because we already computed path A-B-E-I-L. We will now have less work to do.
+
+Let's see how the tree saves us work.
+
+### Division into structs
+
+> The style contexts are divided into structs. Those structs contain style information for a certain category like border or color. All the properties in a struct are either inherited or non inherited. Inherited properties are properties that unless defined by the element, are inherited from its parent. Non inherited properties (called "reset" properties) use default values if not defined.
+
+> The tree helps us by caching entire structs (containing the computed end values) in the tree. The idea is that if the bottom node didn't supply a definition for a struct, a cached struct in an upper node can be used.
+
+### Computing the style contexts using the rule tree
+
+> When computing the style context for a certain element, we first compute a path in the rule tree or use an existing one. We then begin to apply the rules in the path to fill the structs in our new style context. We start at the bottom node of the path - the one with the highest precedence (usually the most specific selector) and traverse the tree up until our struct is full. If there is no specification for the struct in that rule node, then we can greatly optimize - we go up the tree until we find a node that specifies it fully and simply point to it - that's the best optimization - the entire struct is shared. This saves computation of end values and memory.
+
+If we find partial definitions we go up the tree until the struct is filled.
+
+> If we didn't find any definitions for our struct then, in case the struct is an "inherited" type, we point to the struct of our parent in the `context tree`. In this case we also succeeded in sharing structs. If it's a reset struct then default values will be used.
+
+> If the most specific node does add values then we need to do some extra calculations for transforming it to actual values. We then cache the result in the tree node so it can be used by children.
+
+> In case an element has a sibling or a brother that points to the same tree node then the `entire style context` can be shared between them.
+
+Lets see an example: Suppose we have this HTML
+```
+<html>
+  <body>
+    <div class="err" id="div1">
+      <p>
+        this is a <span class="big"> big error </span>
+        this is also a
+        <span class="big"> very  big  error</span> error
+      </p>
+    </div>
+    <div class="err" id="div2">another error</div>
+  </body>
+</html>
+```
+And the following rules:
+```
+div {margin: 5px; color:black}
+.err {color:red}
+.big {margin-top:3px}
+div span {margin-bottom:4px}
+#div1 {color:blue}
+#div2 {color:green}
+```
+> To simplify things let's say we need to fill out only two structs: the color struct and the margin struct. The color struct contains only one member: the color The margin struct contains the four sides.
+
+The resulting rule tree will look like this (the nodes are marked with the node name: the number of the rule they point at):
+
+[The Rule Tree](https://web.dev/static/articles/howbrowserswork/image/the-rule-tree-23f05b0dac33f_856.png)
+
+The context tree will look like this (node name: rule node they point to):
+
+[The Context Tree](https://web.dev/static/articles/howbrowserswork/image/the-context-tree-771124b7cb80d_856.png)
+
+> Suppose we parse the HTML and get to the second `<div>` tag. We need to create a style context for this node and fill its style structs.
+
+> We will match the rules and discover that the matching rules for the `<div>` are 1, 2 and 6. This means there is already an existing path in the tree that our element can use and we just need to add another node to it for rule 6 (node F in the rule tree).
+
+> We will create a style context and put it in the context tree. The new style context will point to node F in the rule tree.
+
+> We now need to fill the style structs. We will begin by filling out the margin struct. Since the last rule node (F) doesn't add to the margin struct, we can go up the tree until we find a cached struct computed in a previous node insertion and use it. We will find it on node B, which is the uppermost node that specified margin rules.
+
+> We do have a definition for the color struct, so we can't use a cached struct. Since color has one attribute we don't need to go up the tree to fill other attributes. We will compute the end value (convert string to RGB etc) and cache the computed struct on this node.
+
+> The work on the second `<span>` element is even easier. We will match the rules and come to the conclusion that it points to rule G, like the previous span. Since we have siblings that point to the same node, we can share the entire style context and just point to the context of the previous span.
+
+> For structs that contain rules that are inherited from the parent, caching is done on the context tree (the color property is actually inherited, but Firefox treats it as reset and caches it on the rule tree).
+
+For instance if we added rules for fonts in a paragraph:
+```
+p {font-family: Verdana; font size: 10px; font-weight: bold}
+```
+> Then the paragraph element, which is a child of the div in the context tree, could have shared the same font struct as his parent. This is if no font rules were specified for the paragraph.
+
+> In WebKit, who does not have a rule tree, the matched declarations are traversed four times. First non-important high priority properties are applied (properties that should be applied first because others depend on them, such as display), then high priority important, then normal priority non-important, then normal priority important rules. This means that properties that appear multiple times will be resolved according to the correct cascade order. The last wins.
+
+> So to summarize: sharing the style objects (entirely or some of the structs inside them) solves issues 1 and 3. The Firefox rule tree also helps in applying the properties in the correct order.
+
+### Manipulating the rules for an easy match
+
+There are several sources for style rules:
+
+1. CSS rules, either in external style sheets or in style elements. `css p {color: blue}`
+
+2. Inline style attributes like html `<p style="color: blue" />
+`
+
+3. HTML visual attributes (which are mapped to relevant style rules) `html <p bgcolor="blue" />` The last two are easily matched to the element since he owns the style attributes and HTML attributes can be mapped using the element as the key.
+
+> As noted previously in issue #2, the CSS rule matching can be trickier. To solve the difficulty, the rules are manipulated for easier access.
+
+> After parsing the style sheet, the rules are added to one of several hash maps, according to the selector. There are maps by id, by class name, by tag name and a general map for anything that doesn't fit into those categories. If the selector is an id, the rule will be added to the id map, if it's a class it will be added to the class map etc.
+
+> This manipulation makes it much easier to match rules. There is no need to look in every declaration: we can extract the relevant rules for an element from the maps. This optimization eliminates 95+% of the rules, so that they need not even be considered during the matching process(4.1).
+
+Let's see for example the following style rules:
+```
+p.error {color: red}
+#messageDiv {height: 50px}
+div {margin: 5px}
+```
+> The first rule will be inserted into the class map. The second into the id map and the third into the tag map.
+
+For the following HTML fragment:
+```
+<p class="error">an error occurred</p>
+<div id=" messageDiv">this is a message</div>
+```
+
+> We will first try to find rules for the p element. The class map will contain an "error" key under which the rule for "p.error" is found. The div element will have relevant rules in the id map (the key is the id) and the tag map. So the only work left is finding out which of the rules that were extracted by the keys really match.
+
+For example if the rule for the div was
+```
+table div {margin: 5px}
+```
+
+it will still be extracted from the tag map, because the key is the rightmost selector, but it would not match our div element, who does not have a table ancestor.
+
+> Both WebKit and Firefox do this manipulation.
+
+### Applying the rules in the correct cascade order
+
+> The style object has properties corresponding to every visual attribute (all CSS attributes but more generic). If the property is not defined by any of the matched rules, then some properties can be inherited by the parent element style object. Other properties have default values.
+
+> The problem begins when there is more than one definition - here comes the cascade order to solve the issue.
+
+### Style sheet cascade order
+
+> A declaration for a style property can appear in several style sheets, and several times inside a style sheet. This means the order of applying the rules is very important. This is called the "cascade" order. According to CSS2 spec, the cascade order is (from low to high):
+
+> 1. Browser declarations
+> 2. User normal declarations
+> 3. Author normal declarations
+> 4. Author important declarations
+> 5. User important declarations
+
+> The browser declarations are least important and the user overrides the author only if the declaration was marked as important. Declarations with the same order will be sorted by specificity and then the order they are specified. The HTML visual attributes are translated to matching CSS declarations . They are treated as author rules with low priority.
+
+### Specificity
+
+> The selector specificity is defined by the CSS2 specification as follows:
+
+https://www.w3.org/TR/CSS2/cascade.html#specificity
+
+> 1. count 1 if the declaration it is from is a 'style' attribute rather than a rule with a selector, 0 otherwise (= a)
+
+> 2. count the number of ID attributes in the selector (= b)
+
+> 3. count the number of other attributes and pseudo-classes in the selector (= c)
+
+> 4. count the number of element names and pseudo-elements in the selector (= d)
+
+> Concatenating the four numbers a-b-c-d (in a number system with a large base) gives the specificity.
+
+> The number base you need to use is defined by the highest count you have in one of the categories.
+
+> For example, if a=14 you can use hexadecimal base. In the unlikely case where a=17 you will need a 17 digits number base. The later situation can happen with a selector like this: html body div div p… (17 tags in your selector… not very likely).
+
+Some examples:
+```
+ *             {}  /* a=0 b=0 c=0 d=0 -> specificity = 0,0,0,0 */
+ li            {}  /* a=0 b=0 c=0 d=1 -> specificity = 0,0,0,1 */
+ li:first-line {}  /* a=0 b=0 c=0 d=2 -> specificity = 0,0,0,2 */
+ ul li         {}  /* a=0 b=0 c=0 d=2 -> specificity = 0,0,0,2 */
+ ul ol+li      {}  /* a=0 b=0 c=0 d=3 -> specificity = 0,0,0,3 */
+ h1 + *[rel=up]{}  /* a=0 b=0 c=1 d=1 -> specificity = 0,0,1,1 */
+ ul ol li.red  {}  /* a=0 b=0 c=1 d=3 -> specificity = 0,0,1,3 */
+ li.red.level  {}  /* a=0 b=0 c=2 d=1 -> specificity = 0,0,2,1 */
+ #x34y         {}  /* a=0 b=1 c=0 d=0 -> specificity = 0,1,0,0 */
+ style=""          /* a=1 b=0 c=0 d=0 -> specificity = 1,0,0,0 */
+```
+
+### Sorting the rules
+
+> After the rules are matched, they are sorted according to the cascade rules. WebKit uses bubble sort for small lists and merge sort for big ones. WebKit implements sorting by overriding the ">" operator for the rules:
+
+```
+static bool operator >(CSSRuleData& r1, CSSRuleData& r2)
+{
+    int spec1 = r1.selector()->specificity();
+    int spec2 = r2.selector()->specificity();
+    return (spec1 == spec2) : r1.position() > r2.position() : spec1 > spec2;
+}
+```
+
+### Gradual process
+
+> WebKit uses a flag that marks if all top level style sheets (including @imports) have been loaded. If the style is not fully loaded when attaching, place holders are used and it is marked in the document, and they will be recalculated once the style sheets were loaded.
+
+## Layout
