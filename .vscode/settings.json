@@ -11,6 +11,7 @@
         "Concat",
         "Datagram",
         "Deno",
+        "DOMTR",
         "fname",
         "HMTP",
         "HPACK",
