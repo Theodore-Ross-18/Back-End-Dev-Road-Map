@@ -676,27 +676,27 @@ Let's see how the browsers face these issues:
 
 ### Sharing style data
 
-    WebKit nodes references style objects (RenderStyle). These objects can be shared by nodes in some conditions. The nodes are siblings or cousins and:
+WebKit nodes references style objects (RenderStyle). These objects can be shared by nodes in some conditions. The nodes are siblings or cousins and:
 
-    1. The elements must be in the same mouse state (e.g., one can't be in :hover while the other isn't)
+1. The elements must be in the same mouse state (e.g., one can't be in :hover while the other isn't)
 
-    2. Neither element should have an id
+2. Neither element should have an id
 
-    3. The tag names should match
+3. The tag names should match
 
-    4. The class attributes should match
+4. The class attributes should match
 
-    5. The set of mapped attributes must be identical
+5. The set of mapped attributes must be identical
 
-    6. The link states must match
+6. The link states must match
 
-    7. The focus states must match
+7. The focus states must match
 
-    8. Neither element should be affected by attribute selectors, where affected is defined as having any selector match that uses an attribute selector in any position within the selector at all
+8. Neither element should be affected by attribute selectors, where affected is defined as having any selector match that uses an attribute selector in any position within the selector at all
 
-    9. There must be no inline style attribute on the elements
+9. There must be no inline style attribute on the elements
 
-    10. There must be no sibling selectors in use at all. WebCore simply throws a global switch when any sibling selector is encountered and disables style sharing for the entire document when they are present. This includes the + selector and selectors like :first-child and :last-child.
+10. There must be no sibling selectors in use at all. WebCore simply throws a global switch when any sibling selector is encountered and disables style sharing for the entire document when they are present. This includes the + selector and selectors like :first-child and :last-child.
 
 ### Firefox rule tree
 
