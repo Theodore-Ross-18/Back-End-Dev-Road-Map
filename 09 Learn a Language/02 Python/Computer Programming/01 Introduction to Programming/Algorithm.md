@@ -130,7 +130,155 @@ https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/
 
 ---
 
+### Programming
 
+> - Programming is the act or process of planning or writing a program.
+
+> - A `computer program` (also a software program, or just a program) is a sequence of instructions written to perform a specified task for a `computer`.
+
+> - A `programming language` is an artificial language designed to express computations that can be performed by a machine, particularly a computer. 
+
+> Programming languages can be used to create programs that control the behavior of a machine and/or to express algorithms precisely.
+
+### Identifiers
+
+> - Identifiers are the names you supply for variables, types,functions, and labels in your program
+
+> - Identifiers must differ in spelling and case from any keywords. You cannot use keywords as identifiers; they are reserved for special use. You create an identifier by specifying it in the declaration of a variable, type, or function
+
+> - Identifiers are composed of a sequence of letters, digits and the special character _(underscore)
+
+### Keywords
+
+> - `Keyword` - An identifier that you cannot use because it already has a reserved meaning in ~~Java~~ Python.
+
+|  These are the reserved |   keywords   |   you    |  cannot  | used |
+|--------------|-----------|------------|------------|------------|
+|   abstract  |   default   |  if   |  private   | this |
+|  boolean    |   do     |   implements   |  protected  | throw |
+|   break  |    double    |   import    |  public   | throws |
+|  byte   |   else     |   instanceof   |  return   | transient |
+|  case   |   extends  |   int   |  short  | try |
+|  catch  |   final   |   interface   |  static  | void |
+|   char  |   finally |   long   |  strictfp  | volatile |
+|  class  |   float   |   native |  super  | while |
+|  const  |   for     |   new    |  switch | continue |
+|  goto   |   package |   synchronized   |    | |
+
+### Variables
+
+> - Variables are identifiers that can store a changeable value. These can be different data types (Depends cause a variable can be a constant type where the value is not changeable)
+
+> - Variables is a location in memory where a value can be stored for use by a program
+
+> - We have to declare all variables and constants, before we can use them in our main program.
+
+### Data Types
+
+> - Data type is a data storage format that can contain a specific type or range of values.
+
+
+|  Name |  Description   |   Size   |  Range  |
+|--------------|-----------|------------|------------|
+|  char  |   Character or small integer   |  1 byte   |  signed: -128 to 127  - unsigned: 0 to 255|
+|  short int (short)  |  Short Integer    |  2 bytes   |  signed: -32768 to 32767 - unsigned: 0 to 65535  |
+|  int  |  Integer    |  4 bytes   |  signed: -2147483648 to 2147483647 - unsigned: 0 to 4294967295   |
+|  long int (long)  |  Long integer   |   4 bytes  |  signed: -2147483648 to 2147483647  - unsigned: 0 to 4294967295   |
+|  bool  |   Boolean Value (True or False)   |  1 byte   |  true or false (0 or 1) - (on or off) |
+|  float  |   Floating Point Number   |  4 bytes   |  +/- 3.4e +/- 38 (~7 digits)   |
+|  double  |   Double Precision Floating Point Number   |   8 bytes  |  +/-1.7e +/- 308 (~15 digits)   |
+|  long double  |   Long Double Precision Floating Point Number   |   8 bytes  |  +/-1.7e +/- 308 (~15 digits)  |
+
+
+### Rules for defining or naming variables:
+
+> 1. It must consist only letters, digits and underscore: `_total, num_1`
+
+> 2. It should not begin with a digit: `1name, 3to3, 4`
+
+> 3. Keywords are not allowed to be a variable: `float, default`
+
+> 4. It is a case sensitive: `Ans or ans` are two different variable names
+
+> 5. Do not include embedded blanks (white space): `first name`
+
+> 6. Do not call your variable by other name as other functions: `main`
+
+### Variable Declaration
+
+Syntax 
+```
+Data Type Variable Terminator (;)
+```
+
+Example
+```
+int _total;
+
+float num1, ex_2, file;
+
+char letter;
+```
+
+### Operators
+
+> - `Operator` is a symbol that tells the computer to perform specific mathematical or logical computations  
+
+> - `Three (3) Classes of Operators`
+
+> 1. Arithmetic Operators
+
+| Operator  | Action  | Sample |
+|--------------|-----------|------------|
+| `+` |  Addition   |   5 + 3 = 8    |
+| `-` |  Subtraction    |   5 - 3 = 2    |
+| `*` |  Multiplication   |   5 * 3 = 15     |
+| `/` |  Division  |    5 / 3 = 1    |
+| `%` |  Modulus   |    5 % 3 = 2    |
+| `--` | Decrement 
+| `++` | Increment    
+
+> 2. Relational and Logical Operators (T/F)
+
+| Relational Operators  | Meaning  | Sample |
+|--------------|-----------|------------|
+| `>` |  Greater Than   |   5 > 3    |
+| `>=` | Greater Than or Equal  |   5 >= 5   |
+| `<` |  Less Than  |   7 < 10  |
+| `<=` |  Less Than or Equal  |    7 <= 9    |
+| `==` |  Equal   |    5 == 7    |
+| `!=` |  Not Equal  | 5 != 6 |
+
+| Logical Operators  | Meaning  |
+|--------------|-----------|
+| `&&` |  AND   |
+| II | OR  |
+| `!` |  NOT  |
+
+> 3. Bitwise (T(1) / F(0))
+
+> - `OR (||)` at least one of the conditions is true
+> - `AND (&&)` two conditions must be true
+
+| A  | B  | A && B | A II B | !A | !B |
+|--------------|-----------|-----------|-----------|-----------|-----------|
+| 1 | 1 | 1 | 1 | 0 | 0 |
+| 1 | 0 | 0 | 1 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 1 | 0 |
+| 0 | 0 | 0 | 0 | 1 | 1 |
+
+### Converting Mathematical Formula to ~~Java~~ Python Expression
+
+> - To solve mathematical problems using the computer, the formula should be translated to the programming language to be used.
+
+> - Example:
+```
+b(2) - 4ac ----> b*b-4*a*c
+
+a + b / c + d ----> (a + b) / (c + d)
+
+x(3) ----> x*x*x*x
+```
 
 
 
