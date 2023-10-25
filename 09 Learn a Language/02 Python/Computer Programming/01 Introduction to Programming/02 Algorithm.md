@@ -222,11 +222,11 @@ char letter;
 
 ### Operators
 
-> - `Operator` is a symbol that tells the computer to perform specific mathematical or logical computations  
+> `Operator` is a symbol that tells the computer to perform specific mathematical or logical computations  
 
-> - `Three (3) Classes of Operators`
+#### Three (3) Classes of Operators
 
-> 1. Arithmetic Operators
+#### 1. Arithmetic Operators and Operations
 
 | Operator  | Action  | Sample |
 |--------------|-----------|------------|
@@ -236,9 +236,91 @@ char letter;
 | `/` |  Division  |    5 / 3 = 1    |
 | `%` |  Modulus   |    5 % 3 = 2    |
 | `--` | Decrement 
-| `++` | Increment    
+| `++` | Increment 
 
-> 2. Relational and Logical Operators (T/F)
+#### Concept
+
+> Arithmetic Expressions in Straight-Line Form
+
+> Arithmetic expressions in programming must be written in straight-line form to facilitate entering programs into the computer. Thus, expressions such as “a divided by b” must be written as a/b so that all operators and operands appear in a straight line. The algebraic notation
+
+    Math Expression: a over b
+
+    Programming Expression: a / b
+
+> `Note:` Math expression shown above, is generally not acceptable to compilers, although some special-purpose software packages do support more natural notation for complex mathematical expressions
+
+#### Parentheses for Grouping Sub-expressions
+
+> Parentheses are used in Programming expressions in the same manner as in algebraic expressions.
+
+Example
+
+To multiply a times the quantity b + c we write the following expressions:
+```
+a * ( b + c )
+```
+
+#### Rules of Operator Precedence
+
+> The rules of operator precedence specify the order uses to evaluate expressions
+
+> When we say evaluation proceeds from left to right, we’re referring to the associativity of the operators. We’ll see that some operators associate from right to left.
+
+> Programming applies the operators in arithmetic expressions in a precise sequence determined by the following rules of operator precedence, which are generally the same as those in algebra:
+
+> 1. Operators in expressions contained within pairs of parentheses are evaluated first.Parentheses are said to be at the “highest level of precedence.” In cases of nested, or embedded, parentheses, such as
+
+    ( ( a +b) + c)
+the operators in the innermost pair of parentheses are applied first.
+
+> 2. Multiplication, division and remainder operations are applied next. If an expression contains several multiplication, division and remainder operations, evaluation proceeds from left to right. Multiplication, division and remainder are said to be on the same level of precedence.
+
+> 3. Addition and subtraction operations are evaluated next. If an expression contains several addition and subtraction operations, evaluation proceeds from left to right. Addition and subtraction also have the same level of precedence, which is lower than the precedence of the multiplication, division and remainder operations.
+
+> 4. The assignment operator (=) is evaluated last.
+
+| Operator (s) | Operation (s) | Order of Evaluation (precedence) |
+|--------------|-----------|------------|
+| `( )` | Parentheses | Evaluated first. If the parentheses are nested, the expression in the innermost pair of is evaluated first. If there are several pairs of parentheses `on the same level` and not nested then they're evaluated left to right  |
+|   `* / %`   | Multiplication, Division, and Remainder |  Evaluated Second. If there are several, they're evaluated left to right |
+|   `+ -`   | Addition and Subtraction  |     |
+|   `=`   | Assignment  |   Evaluated last  |
+
+#### PMDRAS (PEMDAS)
+
+> Parenthesis Multiplication Division Remainder Addition Subtraction
+
+> `PEMDAS` is an acronym for Parenthesis, Exponents, Multiplication, Division, Addition, and Subtraction. This is a standard method of determining which operations you must prioritize first, second, third, and so on.
+
+    x = 1 + 0 * 1 – 1 + (6 % 4 / 2)  – division comes first before modulus
+
+    x = 1 + 0 * 1 - 1 + (6 % 2)
+
+    X = 1 + 0 * 1 - 1 + 0
+
+    X = 1 + 0 - 1 + 0 - left to right approach
+
+    X = 1 - 1 + 0 - left to right approach
+
+    X = 0 + 0
+
+    X = 0
+
+#### Converting Mathematical Formula to ~~Java~~ Python Expression
+
+> To solve mathematical problems using the computer, the formula should be translated to the programming language to be used.
+
+Example:
+```
+b(2) - 4ac ----> b * b - 4 * a * c
+
+a + b / c + d ----> (a + b) / (c + d)
+
+x(3) ----> x * x * x * x
+```
+
+#### 2. Relational and Logical Operators (T/F)
 
 | Relational Operators  | Meaning  | Sample |
 |--------------|-----------|------------|
@@ -255,7 +337,7 @@ char letter;
 | II | OR  |
 | `!` |  NOT  |
 
-> 3. Bitwise (T(1) / F(0))
+#### 3. Bitwise (T(1) / F(0))
 
 > - `OR (||)` at least one of the conditions is true
 > - `AND (&&)` two conditions must be true
@@ -266,19 +348,3 @@ char letter;
 | 1 | 0 | 0 | 1 | 0 | 1 |
 | 0 | 1 | 0 | 1 | 1 | 0 |
 | 0 | 0 | 0 | 0 | 1 | 1 |
-
-### Converting Mathematical Formula to ~~Java~~ Python Expression
-
-> - To solve mathematical problems using the computer, the formula should be translated to the programming language to be used.
-
-> - Example:
-```
-b(2) - 4ac ----> b*b-4*a*c
-
-a + b / c + d ----> (a + b) / (c + d)
-
-x(3) ----> x*x*x*x
-```
-
-
-
