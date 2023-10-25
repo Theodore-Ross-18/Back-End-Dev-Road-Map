@@ -33,4 +33,3 @@ for _ in range(10):
 
 # Close the turtle graphics window when clicked
 turtle.exitonclick()
-
